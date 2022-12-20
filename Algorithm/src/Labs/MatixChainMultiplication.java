@@ -1,3 +1,4 @@
+// Java program that uses dynamic programming to solve the matrix chain multiplication problem
 package Labs;
 
 import java.util.Scanner;
@@ -58,3 +59,12 @@ class MatrixChainMultiplication {
     }
 }
 
+
+//    This program takes an array p of dimensions and the number of matrices n as input, and returns the minimum number of
+//        scalar multiplications needed to compute the product of the matrices.
+//
+//        The algorithm uses a bottom-up dynamic programming approach to solve the problem.
+//        It starts by calculating the cost of multiplying pairs of matrices and then gradually increases
+//        the size of the chain until the full chain is considered. At each step, the algorithm calculates the cost
+//        of multiplying the subchain from i to j using the minimum cost of multiplying the subchains from i to k and from k+1 to j,
+//        where k is a pivot point. The final result is stored in the m[1][n-1] element of the m matrix.
